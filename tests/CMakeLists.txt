@@ -20,6 +20,6 @@ ENDIF()
 
 if(BUILD_CUDA_ANYFOLD)
   Find_PACKAGE(CUDA REQUIRED)
-  cuda_add_executable(test_cuda_multiple_convolutions test_cuda_multiple_convolutions.cpp)
-  target_link_libraries(test_cuda_multiple_convolutions boost_system boost_filesystem boost_unit_test_framework anyfold)
+  cuda_add_executable(test_cuda_multiple_ffts test_cuda_multiple_ffts.cpp)
+  target_link_libraries(test_cuda_multiple_ffts boost_system boost_filesystem boost_unit_test_framework anyfold)
 ENDIF()
