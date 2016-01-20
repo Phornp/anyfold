@@ -19,6 +19,9 @@ SET (ANYFOLD_VENDOR_NAME "Max Planck Institute of Molecular Cell Biology and Gen
 SET (ANYFOLD_VENDOR_URL "www.mpi-cbg.de")
 SET (ANYFOLD_ID "${ANYFOLD_VENDOR_ID}.${PROJECT_NAME}")
 
+SET (OpenCL_INCLUDE_DIR "/sw/taurus/libraries/opencl/1.2-4.4.0.117/include")
+SET (BOOST_INCLUDEDIR "/sw/taurus/libraries/boost/1.54.0-gnu4.6/include")
+SET (BOOST_ROOT "/sw/taurus/libraries/boost/1.54.0-gnu4.6")
 # trying to setup paths so this package can be picked up
 set(INSTALL_INCLUDE_DIR include CACHE PATH "Installation directory for header files")
 
@@ -137,7 +140,6 @@ install(FILES
   "${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/anyfold-config.cmake"
   "${PROJECT_BINARY_DIR}/anyfold-config-version.cmake"
   DESTINATION "${INSTALL_SHARE_DIR}" COMPONENT dev)
-
 
 
 

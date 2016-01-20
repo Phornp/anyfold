@@ -30,9 +30,10 @@ BOOST_FIXTURE_TEST_CASE_TEMPLATE(forward_backward, T, Fixtures, T)
 	                                     T::padded_image_.data() + T::padded_image_.num_elements(),
 	                                     0.f);
 
-  std::vector</*TODO: please implement*/anyfold::complex_image_stack> intermediate_images(10,  
-											  /*TODO: please implement*/T::padded_complex_image_
-											  );
+  //std::vector</*TODO: please implement*/anyfold::complex_image_stack> intermediate_images(10,  
+	//										  /*TODO: please implement*/T::padded_complex_image_
+	//										  );
+ 
   
   anyfold::cuda::convolve_forward_fft(input_images, T::padded_image_shape_,
 				      intermediate_images);
